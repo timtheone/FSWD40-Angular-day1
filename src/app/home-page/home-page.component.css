@@ -41,35 +41,15 @@
     background-size: cover;
 }
 
-/* .card-wrapper::after {
-    content: "";
-    background: url("https://images.unsplash.com/photo-1517850127947-7701158a198b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f4eefcfdc28767eb9d8ce2ec88939170&auto=format&fit=crop&w=755&q=80");
-    background-size: cover;
-    opacity: 0.5;
-    top: 720px;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;  
-
-}  */
-
 
 .divider {
     background-color: #003B61;
     height: 130px;
     color: white;
 }
-
-@media screen and (min-width: 421px) and (max-width: 1000px) {
-    .card-wrapper::after {
-        height: 2300px!important;
-    }
-}
-
-@media screen and (max-width: 420px) {
-    .card-wrapper::after {
-        height: 1100px!important;
-    }
+#runningText{
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    padding-top: 29px;
 }

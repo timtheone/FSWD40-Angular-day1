@@ -25,4 +25,30 @@ export class HomePageComponent implements OnInit {
   ngOnInit() {
   }
 
+  function typeIt(words) {
+  var letterIndex = 0;
+  var wordIndex= 0;
+  var p = $("#runningText");
+  var a = 0;
+
+  var SI = setInterval(function() {
+  if (letterIndex === words[wordIndex].length) { // if at end of current word
+    // wordIndex = (wordIndex + 1) % words.length;  // go to next word ----------------Use for multiple 
+    letterIndex = 0;                             
+   
+    a++;                                  // clear output div
+  }
+  if(a == 0){
+    p.append(words[wordIndex][letterIndex]);
+    letterIndex++;
+  }
+  }, 70);
 }
+
+
+
+
+}
+jQuery(window).ready(function(){
+  typeIt(["Book now and receive a large discount"]);
+})
