@@ -1,0 +1,75 @@
+.card {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.discount {
+    background-color: red;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    left: -5px;
+    top: 23px;
+    width: 90px;
+    transform: rotate(-40deg);
+    text-align: center;
+    background: -moz-linear-gradient(left, rgba(255,0,4,0) 0%, rgba(255,0,4,1) 33%, rgba(255,0,4,1) 66%, rgba(255,0,4,0.82) 72%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255,0,4,0) 0%,rgba(255,0,4,1) 33%,rgba(255,0,4,1) 66%,rgba(255,0,4,0.82) 72%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255,0,4,0) 0%,rgba(255,0,4,1) 33%,rgba(255,0,4,1) 66%,rgba(255,0,4,0.82) 72%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff0004', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+
+}
+.discount-right {
+    left: 9px!important;
+}
+.discount p {
+    margin: 0;
+    padding: 2px 11px;
+}
+.img-card img{
+    width: 100%;
+    filter: brightness(80%);
+}
+
+.btn-book {
+    position: absolute;
+    z-index: 1;
+    top: 60%;
+    left: calc(50% - 50.1px);
+}
+.card-wrapper {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255,0.8)), url("https://images.unsplash.com/photo-1517850127947-7701158a198b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f4eefcfdc28767eb9d8ce2ec88939170&auto=format&fit=crop&w=755&q=80");
+    background-size: cover;
+}
+
+/* .card-wrapper::after {
+    content: "";
+    background: url("https://images.unsplash.com/photo-1517850127947-7701158a198b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f4eefcfdc28767eb9d8ce2ec88939170&auto=format&fit=crop&w=755&q=80");
+    background-size: cover;
+    opacity: 0.5;
+    top: 720px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
+
+}  */
+
+
+.divider {
+    background-color: #003B61;
+    height: 130px;
+    color: white;
+}
+
+@media screen and (min-width: 421px) and (max-width: 1000px) {
+    .card-wrapper::after {
+        height: 2300px!important;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .card-wrapper::after {
+        height: 1100px!important;
+    }
+}
